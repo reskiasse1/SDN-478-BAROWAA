@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>SDN 478 Barowa</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: rgba(0,0,0,0.65);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .menu a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* HEADER */
+    header {
+      background: url('1.jpeg') center/cover no-repeat;
+      height: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    header h1 {
+      background: rgba(0,0,0,0.5);
+      padding: 20px 30px;
+      border-radius: 10px;
+    }
+
+    /* SECTION */
+    section {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      display: none;
+      line-height: 1.6;
+    }
+
+    section img {
+      width: 320px;
+      display: block;
+      margin: 15px auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #ddd;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      <img src="logo SD.jpg" alt="Logo SDN 478 Barowa">
+      <strong>SDN 478 BAROWA</strong>
+    </div>
+
+    <div class="menu">
+      <a onclick="showSection('beranda')">Beranda</a>
+      <a onclick="showSection('profil')">Profil</a>
+      <a onclick="showSection('kelas')">Kelas</a>
+      <a onclick="showSection('kegiatan')">Kegiatan</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>SDN 478 BAROWA</h1>
+  </header>
+
+  <!-- BERANDA -->
+  <section id="beranda">
+    <h2>Beranda</h2>
+    <p>
+      Selamat datang di website resmi SD Negeri 478 Barowa.
+      Website ini menyajikan informasi mengenai profil sekolah,
+      kelas, serta berbagai kegiatan yang dilaksanakan oleh
+      SDN 478 Barowa.
+    </p>
+  </section>
+
+  <!-- PROFIL -->
+  <section id="profil">
+    <h2>Profil Sekolah</h2>
+    <img src="2.jpeg" alt="Profil SDN 478 Barowa">
+
+    <p>
+      SD Negeri 478 Barowa adalah sekolah negeri yang berlokasi di
+      Jl. Muntalaka, Desa Barowa, Kecamatan Bua, Kabupaten Luwu,
+      Provinsi Sulawesi Selatan. Sekolah ini memiliki akreditasi
+      <strong>B</strong>, menggunakan <strong>Kurikulum Merdeka</strong>,
+      dan dipimpin oleh Kepala Sekolah <strong>Ernniwati Hodding, S.Pd.</strong>
+    </p>
+
+    <p>
+      <strong>Nama Sekolah</strong> : SD NEGERI 478 BAROWA<br>
+      <strong>NPSN</strong> : 40305992<br>
+      <strong>Alamat</strong> : Jl. Muntalaka<br>
+      <strong>Desa/Kelurahan</strong> : Barowa<br>
+      <strong>Kecamatan</strong> : Kec. Bua<br>
+      <strong>Kabupaten</strong> : Kab. Luwu<br>
+      <strong>Provinsi</strong> : Sulawesi Selatan<br>
+      <strong>Status Sekolah</strong> : Negeri<br>
+      <strong>Bentuk Pendidikan</strong> : SD<br>
+      <strong>Jenjang Pendidikan</strong> : Pendidikan Dasar (Dikdas)
+    </p>
+  </section>
+
+  <!-- KELAS -->
+  <section id="kelas">
+    <h2>Kelas</h2>
+    <img src="3.jpeg" alt="Ruang Kelas SDN 478 Barowa">
+
+    <p>
+      SDN 478 Barowa adalah sekolah dasar di Barowa, Kecamatan Bua,
+      Kabupaten Luwu. Sekolah ini memiliki kelas I–VI dengan
+      kegiatan belajar tematik, literasi, numerasi, serta
+      pembiasaan karakter.
+    </p>
+
+    <p>
+      Fasilitas sekolah meliputi ruang kelas, perpustakaan,
+      dan lapangan olahraga. Visi sekolah adalah membentuk
+      siswa yang cerdas, berkarakter, dan berakhlak mulia.
+    </p>
+  </section>
+
+  <!-- KEGIATAN -->
+  <section id="kegiatan">
+    <h2>Kegiatan Sekolah</h2>
+    <img src="4.jpeg" alt="Kegiatan SDN 478 Barowa">
+
+    <p>
+      Alhamdulillah, berkat kerja sama guru-guru hebat SDN 478 Barowa,
+      sekolah berhasil meraih <strong>Juara 2</strong> dari 5 juara
+      terpilih dengan jumlah peserta 123 orang pada kegiatan
+      <strong>Pekan Bukti Karya Komunitas Belajar BBGP
+      Sulawesi Selatan</strong>, mewakili Komunitas Sisola
+      SDN 478 Barowa, Kabupaten Luwu.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 SD Negeri 478 Barowa</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function showSection(id) {
+      let sections = document.querySelectorAll("section");
+      sections.forEach(sec => sec.style.display = "none");
+      document.getElementById(id).style.display = "block";
+    }
+
+    // tampilkan beranda saat pertama dibuka
+    showSection("beranda");
+  </script>
+
+</body>
+</html>
